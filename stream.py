@@ -15,20 +15,22 @@ consumer_secret = "masukkan consumer_secret"
 access_token = "masukkan access_token"
 access_token_secret = "masukkan access_token_secret"
 
-class AkangStream(StreamListener):
+class TukangBaca(StreamListener):
     """ A listener handles tweets that are received from the stream.
     This is a basic listener that just prints received tweets to stdout.
     """
-    
-    #def on_data(self, data):
-    #    print(data)
-    #    return True
-    
-    def on_status(self, status):
-        print(status.text)
+    def on_data(self, data):
+        baca  = json.loads(data)
+        print("\n\n pada", baca["created_at"])
+        print(baca["id_str"])
+        print("Tweet: ",baca["text"])
+        print("Jumlah Retweet: ",baca["retweet_count"])
+        print("Jumlah favorit: ", baca["favorite_count"])
+        print(baca["user"])
+        return True
 
 if __name__ == '__main__':
-    l = AkangStream()
+    l = TukangBaca()
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
