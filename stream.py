@@ -15,7 +15,7 @@ consumer_secret = "masukkan consumer_secret"
 access_token = "masukkan access_token"
 access_token_secret = "masukkan access_token_secret"
 
-class StdOutListener(StreamListener):
+class AkangStream(StreamListener):
     """ A listener handles tweets that are received from the stream.
     This is a basic listener that just prints received tweets to stdout.
     """
@@ -28,7 +28,7 @@ class StdOutListener(StreamListener):
         print(status.text)
 
 if __name__ == '__main__':
-    l = StdOutListener()
+    l = AkangStream()
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
