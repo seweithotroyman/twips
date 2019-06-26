@@ -14,13 +14,12 @@ if mo:
 else:
     raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
 
-setup(name="tweepy",
+setup(name="Twips",
       version=version,
-      description="Twitter library for python",
+      description="Twitter Stream Python",
       license="MIT",
-      author="Joshua Roesslein",
-      author_email="tweepy@googlegroups.com",
-      url="http://github.com/tweepy/tweepy",
+      author="Hehehe",
+      url="https://github.com/seweithotroyman",
       packages=find_packages(exclude=['tests', 'examples']),
       install_requires=[
           "PySocks>=1.5.7",
