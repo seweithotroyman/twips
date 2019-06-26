@@ -1,5 +1,5 @@
 # Twips
-[![Documentation Status](http://img.shields.io/badge/docs-v3.7.0-brightgreen.svg?style=flat)](http://docs.tweepy.org)
+[![Documentation Status](http://img.shields.io/badge/docs-v1.0.0-brightgreen.svg?style=flat)](https://github.com/seweithotroyman/twips/blob/master/README.md)
 
 Tested on Python 3.7
 
