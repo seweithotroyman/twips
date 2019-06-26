@@ -9,6 +9,7 @@ from __future__ import absolute_import, print_function
 
 from tweepy import OAuthHandler, Stream, StreamListener
 
+#Buat API Twitter di link berikut https://developer.twitter.com/en/apps
 consumer_key = "masukkan consumer_key"
 consumer_secret = "masukkan consumer_secret"
 access_token = "masukkan access_token"
